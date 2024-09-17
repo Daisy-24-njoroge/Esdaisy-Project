@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: larger;
+}
+
+nav {
+    background-color: #0056b3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+nav img {
+    height: 40px;
+    width: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav .logins {
+    display: flex;
+    gap: 10px;
+}
+
+nav .btn1, .btn2 {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #0088cc;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+#hero .left h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+#hero .left span {
+    color: #0056b3;
+}
+
+#hero .left p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+#hero .btn1.book {
+    background-color: #0056b3;
+}
+
+#hero .inputContainer input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#hero .inputContainer button {
+    margin-left: 10px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services h1 span {
+    color: #00aaff;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lookingFor {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lookingFor h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.lookingFor h1 span {
+    color: #00aaff;
+}
+
+.lookingFor .categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lookingFor .category {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lookingFor .category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lookingFor .category img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.lookingFor .category h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.lookingFor .category p {
+    font-size: 16px;
+    color: #666;
+}
+
+#doctor h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#doctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.doctors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.profile:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.profile:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.profile h2 {
+    margin: 0 0 10px 0;
+}
+
+.profile p {
+    margin: 0;
+}
+
+.callToAction {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.callToAction .bestDoctors, .callToAction .onlineCare {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.callToAction .bestDoctors:hover, .callToAction .onlineCare:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.callToAction .start, .callToAction .end {
+    text-align: center;
+}
+
+.callToAction .start img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.callToAction .start h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.callToAction .start p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.callToAction button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.callToAction button:hover {
+    background-color: #0088cc;
+}
+
+.callToAction img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonial h1 {
+    font-size: 36px;
+}
+
+.testimonial h1 span {
+    color: #00aaff;
+}
+
+.testimonial .testimony {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial .cardT {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial .cardT:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial .cardT img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial .cardT h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.testimonial .cardT p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.registerCta {
+    text-align: center;
+}
+
+.registerCta button {
+    background-color: #0056b3;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h1 {
+    color: lightblue;
+}
+
+footer .socials i {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+footer .dd h1 {
+    margin-bottom: 20px;
+}
